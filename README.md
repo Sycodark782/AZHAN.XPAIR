@@ -1,2 +1,2 @@
-# malvin-xpair
-A pair session genarator for all baileys bots by malvin king
+# azhan-xpair
+A pair session genarator for all baileys bots by Azhann king
