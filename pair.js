@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function MALVIN_XD_PAIR_CODE() {
+        async function AZHAN_XD_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Malvin_Tech = Malvin_Tech({
+            let Pair_Code_By_Azhan_Tech = Azhan_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Malvin_Tech.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Malvin_Tech.ev.on("connection.update", async (s) => {
+            Pair_Code_By_AZHAn_Tech.ev.on('creds.update', saveCreds)
+            Pair_Code_By_Azhan_Tech.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,30 +54,30 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Malvin_Tech.sendMessage(Pair_Code_By_Malvin_Tech.user.id, { text: 'Malvin~' + b64data });
+               let session = await Pair_Code_By_azhan_Tech.sendMessage(Pair_Code_By_Malvin_Tech.user.id, { text: 'Malvin~' + b64data });
 
-               let MALVIN_XD_TEXT = `
-      MALVIN-XD V4 Sucess Scan Session 
+               let AZHAN_XD_TEXT = `
+      AZHANN-XD V4 Sucess Scan Session 
 
-> Bot repo: Https://GitHub.com/XdKing2/MALVIN-XD 
+> Bot repo:  https://github.com/Sycodark782/AZHAN.XPAIR.git
 
-> Owner: *Malvin King*
+> Owner: *AZHAn King*
 
-> BotName: *MALVIN XD* 
+> BotName: *AZHANN XD* 
 
 
 
 *Follow support for updates*
-https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
+https://whatsapp.com/channel/0029Vb6IkG589inpsgQiup2H
 
 
-> _Regards Malvin King_`
+> _Regards AZHANn King_`
 
- await Pair_Code_By_Malvin_Tech.sendMessage(Pair_Code_By_Malvin_Tech.user.id,{text:MALVIN_XD_TEXT},{quoted:session})
+ await Pair_Code_By_azhan_Tech.sendMessage(Pair_Code_By_azhan_Tech.user.id,{text:AZHANN_XD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Malvin_Tech.ws.close();
+        await Pair_Code_By_AZHANn_Tech.ws.close();
         await removeFile('./temp/'+id);
    require('child_process').exec('pm2 restart PAIR');
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
@@ -93,6 +93,6 @@ https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
          }
         }
     }
-    return await MALVIN_XD_PAIR_CODE()
+    return await AZHAN_XD_PAIR_CODE()
 });
 module.exports = router
