@@ -59,22 +59,22 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Malvin_Tech.sendMessage(Qr_Code_By_Malvin_Tech.user.id, { text: '' + b64data });
 	
 				   let MALVIN_KING_TEXT = `
-MALVIN-XD V4 Sucess Scan Session 
+AZHAN-XD V4 Sucess Scan Session 
 
 > Bot repo: Https://GitHub.com/XdKing2/MALVIN-XD 
 
-> Owner: *Malvin King*
+> Owner: *AZH4N KI9G*
 
-> BotName: *MALVIN XD* 
+> BotName: *AZH4N XD* 
 
 
 
 *Follow support for updates*
-https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
+https://whatsapp.com/channel/0029Vb6IkG589inpsgQiup2H
 
 
-> _Regards Malvin King_ `
-	 await Qr_Code_By_Malvin_Tech.sendMessage(Qr_Code_By_Malvin_Tech.user.id,{text:MALVIN_KING_TEXT},{quoted:session})
+> _Regards AXHAN King_ `
+	 await Qr_Code_By_azhan_Tech.sendMessage(Qr_Code_By_AZHANn_Tech.user.id,{text:AZHANN_KING_TEXT},{quoted:session})
 
 
 
@@ -83,7 +83,7 @@ https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					MALVIN_XD_QR_CODE();
+					AZHANN_XD_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -96,6 +96,6 @@ https://whatsapp.com/channel/0029VbA6MSYJUM2TVOzCSb2A
 			await removeFile("temp/" + id);
 		}
 	}
-	return await MALVIN_XD_QR_CODE()
+	return await AZHAN_XD_QR_CODE()
 });
 module.exports = router
